@@ -32,8 +32,11 @@ brew install nvm
 install gnu pgp
 brew install gnupg
 
+install htop
+brew install htop
+
 install docker
-brew install docker
+brew install --cask docker
 
 install ansible
 brew install ansible
@@ -43,9 +46,6 @@ brew install --cask android-studio
 
 install postman
 brew install --cask postman
-
-install the unarchiver
-brew install --cask the-unarchiver
 
 install thonny
 brew install --cask thonny
@@ -61,6 +61,9 @@ brew install --cask zoom
 
 install google chrome
 brew install google-chrome
+
+install brave
+brew install --cask brave-browser
 
 install microsoft office
 brew install --cask microsoft-office
