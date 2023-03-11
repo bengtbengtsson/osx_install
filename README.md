@@ -93,3 +93,6 @@ set up tray (remove & add apps)
 
 install rosetta 2
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
+install gtkwave
+brew install --cask gtkwave
