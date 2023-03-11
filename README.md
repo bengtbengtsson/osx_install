@@ -1,5 +1,8 @@
 # osx_install
 
+get this script via safari
+https://github.com/bengtbengtsson/osx_install.git
+
 upgrade osx (manual)
 
 set-up trackpad
