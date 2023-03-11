@@ -9,8 +9,8 @@ set-up trackpad
 
 install xcode (maual from appstore)
 
-set up xcode
-xcode-select --install
+set up xcode <p>
+```xcode-select --install```
 
 install .shh (manual, download from Lastpass)
 
@@ -90,3 +90,6 @@ log in to (using google chrome)
 set up mouse and keyboard (manual)
 
 set up tray (remove & add apps)
+
+install rosetta 2
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
