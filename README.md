@@ -2,79 +2,85 @@
 
 upgrade osx (manual)
 
-# install xcode (maual from appstore)
+set-up trackpad
 
-# set up xcode
+install xcode (maual from appstore)
+
+set up xcode
 xcode-select --install
 
-# install .shh (manual, download from Lastpass
+install .shh (manual, download from Lastpass)
 
-# install homebrew
+install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# install python
+install python
 brew install python
 
-# install minimal anaconda (miniconda)
+install minimal anaconda (miniconda)
 brew install --cask miniconda
 
-# install jave sdk
+install jave sdk
 brew install --cask zulu
 
-# install node version manager
+install node version manager
 brew install nvm
 
-# install gnu pgp
+install gnu pgp
 brew install gnupg
 
-# install docker
+install docker
 brew install docker
 
-# install ansible
+install ansible
 brew install ansible
 
-# install android development
+install android development
 brew install --cask android-studio
 
-# install postman
+install postman
 brew install --cask postman
 
-# install the unarchiver
+install the unarchiver
 brew install --cask the-unarchiver
 
-# install thonny
+install thonny
 brew install --cask thonny
 
-# install transmission
+install transmission
 brew install --cask transmission
 
-# install utm (virtual machine manager)
+install utm (virtual machine manager)
 brew install --cask utm
 
-# install zoom
+install zoom
 brew install --cask zoom
 
-# install google chrome
+install google chrome
 brew install google-chrome
 
-# install microsoft office
+install microsoft office
 brew install --cask microsoft-office
 
-# install vlc
+install vlc
 brew install --cask vlc
 
-# install visual studio code
+install visual studio code
 brew install --cask visual-studio-code
 
-# install gimp
+install gimp
 brew install --cask gimp
 
-# install inkscape
+install inkscape
 brew install --cask inkscape
 
-# install mullvad vpn
+install mullvad vpn
 brew install --cask mullvadvpn
 
-# install mongodb (manual)
+install mongodb (manual)
 
-# log in to (using google chrome)
+log in to (using google chrome)
+
+set up mouse and keyboard (manual)
+
+set up tray (remove & add apps)
