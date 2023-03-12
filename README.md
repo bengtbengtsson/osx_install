@@ -10,7 +10,7 @@ set-up trackpad
 install xcode (maual from appstore)
 
 set up xcode <p>
-```xcode-select --install```
+`xcode-select --install`
 
 install .shh (manual, download from Lastpass)
 
@@ -96,3 +96,6 @@ install rosetta 2
 
 install gtkwave
 brew install --cask gtkwave
+
+install microsoft teams
+brew install --cask microsoft-teams
