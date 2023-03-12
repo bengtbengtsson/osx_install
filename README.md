@@ -56,9 +56,6 @@ brew install --cask transmission
 install utm (virtual machine manager)
 brew install --cask utm
 
-install zoom
-brew install --cask zoom
-
 install google chrome
 brew install google-chrome
 
@@ -97,5 +94,5 @@ install rosetta 2
 install gtkwave
 brew install --cask gtkwave
 
-install microsoft teams
-brew install --cask microsoft-teams
+DO NOT install microsoft teams (use web version)
+DO NOT install zoom (use web version)
