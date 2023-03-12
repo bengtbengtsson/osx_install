@@ -5,100 +5,240 @@ https://github.com/bengtbengtsson/osx_install.git
 
 upgrade osx (manual)
 
-set-up trackpad
-
-install xcode (maual from appstore)
-
-set up xcode <p>
-`xcode-select --install`
+install xcode (manual from appstore)
 
 install .shh (manual, download from Lastpass)
 
+<br>
+
+set up xcode
+
+```sh
+$ xcode-select --install
+```
+
+<br>
+
 install homebrew
+
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+<br>
 
 install python
+
+```sh
 brew install python
+```
+
+<br>
 
 install minimal anaconda (miniconda)
+
+```sh
 brew install --cask miniconda
+```
+
+<br>
 
 install jave sdk
+
+```sh
 brew install --cask zulu
+```
+
+<br>
 
 install node version manager
+
+```sh
 brew install nvm
+```
+
+<br>
 
 install gnu pgp
+
+```sh
 brew install gnupg
+```
+
+<br>
 
 install htop
+
+```sh
 brew install htop
+```
+
+<br>
 
 install docker
+
+```sh
 brew install --cask docker
+```
+
+<br>
 
 install ansible
+
+```sh
 brew install ansible
+```
+
+<br>
 
 install android development
+
+```sh
 brew install --cask android-studio
+```
+
+<br>
 
 install postman
+
+```sh
 brew install --cask postman
+```
+
+<br>
 
 install thonny
+
+```sh
 brew install --cask thonny
+```
+
+<br>
 
 install transmission
+
+```sh
 brew install --cask transmission
+```
+
+<br>
 
 install utm (virtual machine manager)
+
+```sh
 brew install --cask utm
+```
+
+<br>
 
 install google chrome
+
+```sh
 brew install google-chrome
+```
+
+<br>
 
 install brave
+
+```sh
 brew install --cask brave-browser
+```
+
+<br>
 
 install microsoft office
+
+```sh
 brew install --cask microsoft-office
+```
+
+<br>
 
 install vlc
+
+```sh
 brew install --cask vlc
+```
+
+<br>
 
 install visual studio code
+
+```sh
 brew install --cask visual-studio-code
+```
+
+<br>
 
 install gimp
+
+```sh
 brew install --cask gimp
+```
+
+<br>
 
 install inkscape
+
+```sh
 brew install --cask inkscape
+```
+
+<br>
 
 install mullvad vpn
+
+```sh
 brew install --cask mullvadvpn
+```
+
+<br>
+
+install rosetta 2
+
+```sh
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
+
+<br>
+
+install gtkwave
+
+```sh
+brew install --cask gtkwave
+```
+
+<br>
+
+install unar (the unrchiver command line tool)
+
+```sh
+brew install unar
+```
+
+<br>
+
+install iterm2
+
+```sh
+brew install --cask iterm2
+```
 
 install mongodb (manual)
 
 log in to (using google chrome)
 
-set up mouse and keyboard (manual)
+- github
+- slack
+- gmail, gcal, gdrive
+
+set up wireless mouse and keyboard (manual)
 
 set up tray (remove & add apps)
 
-install rosetta 2
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
-
-install gtkwave
-brew install --cask gtkwave
-
-install unar (the unrchiver command line tool)
-brew install unar
-
-install iterm2
-brew install --cask iterm2
+set up trackpad
 
 DO NOT install microsoft teams (use web version)
+
 DO NOT install zoom (use web version)
