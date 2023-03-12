@@ -94,5 +94,8 @@ install rosetta 2
 install gtkwave
 brew install --cask gtkwave
 
+install unar (the unrchiver command line tool)
+brew install unar
+
 DO NOT install microsoft teams (use web version)
 DO NOT install zoom (use web version)
