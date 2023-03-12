@@ -97,5 +97,8 @@ brew install --cask gtkwave
 install unar (the unrchiver command line tool)
 brew install unar
 
+install iterm2
+brew install --cask iterm2
+
 DO NOT install microsoft teams (use web version)
 DO NOT install zoom (use web version)
