@@ -225,6 +225,24 @@ install iterm2
 brew install --cask iterm2
 ```
 
+<br>
+
+install qemu
+
+```sh
+brew install qemu
+```
+
+<br>
+
+install arm32 cross-compile toolchain
+
+```sh
+brew install --cask gcc-arm-embedded
+```
+
+<br>
+
 install mongodb (manual)
 
 log in to (using google chrome)
