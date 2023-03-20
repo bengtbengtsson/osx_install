@@ -260,3 +260,29 @@ set up trackpad
 DO NOT install microsoft teams (use web version)
 
 DO NOT install zoom (use web version)
+
+<br>
+
+## ASAHI LINUX
+
+Make a screen dump of result of
+
+```sh
+diskutil list
+```
+
+<br>
+
+install
+
+```sh
+curl https://alx.sh | sh
+```
+
+<br>
+
+uninstall, remove EFI partition
+
+```sh
+diskutil eraseVolume JHFS+ empty /dev/diskXsY
+```
