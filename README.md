@@ -286,3 +286,5 @@ uninstall, remove EFI partition
 ```sh
 diskutil eraseVolume JHFS+ empty /dev/diskXsY
 ```
+
+other: neofetch, cmatrix, tmux, lynx?
