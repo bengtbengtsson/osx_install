@@ -1,20 +1,36 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
+" Show two lines of status bar.
+set laststatus=2
+
+" remap <space> to <leader>
+let mapleader = "\<Esc>"
+
 " NFA engine, regex
 " This prevents slow response for e.g. tsx-files
 set regexpengine=2
 
+" Start NERDTree when Vim is launched without file arguments
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Always use system clipboard
+set clipboard=unnamed
+"
 " Support for autoformatting code.
-let g:python3_host_prog="/opt/homebrew/bin/python3"
-au BufWrite * :Autoformat
+""let g:python3_host_prog="/opt/homebrew/bin/python3"
+"au BufWrite * :Autoformat
+
+" Prevent ctrlP from searching in node_modules
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " Gruvbox
-autocmd vimenter * ++nested colorscheme gruvbox
 set bg=dark
+autocmd vimenter * ++nested colorscheme gruvbox
 
 " set filetypes as typescriptreact
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
+" autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -76,6 +92,7 @@ set showmode
 
 " Show matching words during a search.
 set showmatch
+set matchpairs+=[:],{:},(:),<:>
 
 " Use highlighting when doing a search.
 set hlsearch
@@ -98,15 +115,10 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Plugin code goes here.
 call plug#begin('~/.vim/plugged')
-Plug 'dense-analysis/ale'
-Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'github/copilot.vim'
-Plug 'vim-autoformat/vim-autoformat'
-Plug 'vim-airline/vim-airline'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 " }}}
 
@@ -116,12 +128,23 @@ call plug#end()
 " Mappings code goes here.
 " " NERDTree specific mappings.
 " Map the F3 key to toggle NERDTree open and close.
-nnoremap <F3> :NERDTreeToggle<cr>
+" nnoremap <F3> :NERDTreeToggle<cr>
+nnoremap <leader>c :CtrlP<cr>
+nnoremap <leader>n :Explore<cr>
+nnoremap <leader>b :buffers<cr>
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+"inoremap { { }<Esc>hi
+"inoremap [ [ ]<Esc>hi
+"inoremap ( ( )<Esc>hi
+"inoremap " " "<ESC>hi
+"inoremap ' ' '<ESC>hi
+"inoremap ` ` `<ESC>hi
+
 " }}}
 
 
@@ -134,13 +157,19 @@ augroup filetype_vim
   autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
+
 " More Vimscripts code goes here.
+function! GetGitBranch()
+  let branchname = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  return strlen(branchname) ? ' [' . branchname . ']' : ''
+endfunction
+
 
 " }}}
-
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Status bar code goes here.
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P%{GetGitBranch()}
 
 " }}}
